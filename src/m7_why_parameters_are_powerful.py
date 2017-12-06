@@ -97,6 +97,8 @@ def draw_circles():
 
 def run_test_better_draw_circles():
     better_draw_circles(3, 6)
+    better_draw_circles(10, 7)
+    better_draw_circles(15, 3)
 
 
 def better_draw_circles(n, k):
@@ -104,7 +106,7 @@ def better_draw_circles(n, k):
     window = rg.RoseWindow(400, 400)
 
     center = rg.Point(200, 200)
-    for k in range(21):
+    for k in range(k):
         circle = rg.Circle(center, n * k)
         circle.attach_to(window)
         window.render(0.05)  # Pauses for 0.05 seconds after rendering.
