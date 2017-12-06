@@ -90,7 +90,7 @@ def run_test_sum_square_roots():
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
-    
+
 def sum_square_roots(n):
     total = 0
     for k in range(n+1):
